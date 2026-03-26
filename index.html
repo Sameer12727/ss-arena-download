@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#09090b">
+
+    <!-- =============================================
+         SEO: CORE IDENTITY & VERIFICATION
+         ============================================= -->
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="CaRQw_nRZhbk7wCp9xJCm2c2lKyIqnE6KBeZLqd_oKY" />
+
+    <!-- SEO Title (57 chars — starts with "SS Arena", click-worthy) -->
+    <title>SS Arena – Official App Download | Play & Win Cash</title>
+
+    <!-- Meta Description (153 chars — includes "SS Arena", "Official", "Download") -->
+    <meta name="description" content="SS Arena is the Official Free Fire eSports platform. Download SS Arena APK now, join daily tournaments & win real cash prizes instantly." />
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="ss arena, ss arena download, ss arena app, ss arena official, ss arena apk, ss arena free fire, ss arena tournament, ss arena play and win" />
+
+    <!-- Robots: allow full indexing & crawling -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- Author / Publisher -->
+    <meta name="author" content="SS Arena Official" />
+
+    <!-- Canonical URL: prevents duplicate-content penalties -->
+    <link rel="canonical" href="https://ss-arena-download.vercel.app/" />
+
+    <!-- =============================================
+         SEO: OPEN GRAPH (Facebook / WhatsApp / Social)
+         ============================================= -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://ss-arena-download.vercel.app/" />
+    <meta property="og:site_name"   content="SS Arena Official" />
+    <meta property="og:title"       content="SS Arena – Official App Download | Play & Win Cash" />
+    <meta property="og:description" content="SS Arena is the Official Free Fire eSports platform. Download the SS Arena APK, join premium daily tournaments and win real cash prizes instantly." />
+    <meta property="og:image"       content="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369551811-ebe98952-0265-462a-9a03-cd6d3141090f.png" />
+    <meta property="og:image:alt"   content="SS Arena Official App Logo" />
+    <meta property="og:locale"      content="en_US" />
+
+    <!-- =============================================
+         SEO: TWITTER CARD
+         ============================================= -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="SS Arena – Official App Download | Play & Win Cash" />
+    <meta name="twitter:description" content="Download the SS Arena Official APK. Join Free Fire tournaments & win real cash prizes daily." />
+    <meta name="twitter:image"       content="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369551811-ebe98952-0265-462a-9a03-cd6d3141090f.png" />
+
+    <!-- =============================================
+         SEO: STRUCTURED DATA (JSON-LD)
+         Schema.org SoftwareApplication for rich results
+         ============================================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SS Arena",
+      "alternateName": "SS Arena Official",
+      "url": "https://ss-arena-download.vercel.app/",
+      "description": "SS Arena is the official Free Fire eSports platform. Download the app to join daily tournaments and win real cash prizes.",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PKR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1000"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* =========================================
+           YELLOW & BLACK ESPORTS VARIABLES
+           ========================================= */
+        :root {
+            --bg-main: #09090b; 
+            --bg-surface: #121216; 
+            --primary: #FFCC00; 
+            --primary-glow: rgba(255, 204, 0, 0.4);
+            --secondary: #00E5FF; 
+            --secondary-glow: rgba(0, 229, 255, 0.4);
+            --text-main: #ffffff;
+            --text-sec: #9ca3af;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --radius-lg: 20px;
+            --radius-md: 14px;
+            --radius-sm: 8px;
+        }
+
+        /* =========================================
+           GLOBAL RESET & NATIVE FEEL
+           ========================================= */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            overflow-x: hidden;
+            padding-bottom: 30px; 
+            padding-top: 60px; 
+        }
+
+        h1, h2, h3, h4, .gaming-font {
+            font-family: 'Rajdhani', sans-serif;
+            text-transform: uppercase;
+        }
+
+        ::-webkit-scrollbar { display: none; }
+
+        /* =========================================
+           APP TOP BAR
+           ========================================= */
+        .app-topbar {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 60px;
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0 20px; z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .topbar-brand {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 1.5rem; font-weight: 800; letter-spacing: 1px;
+            font-family: 'Rajdhani', sans-serif; color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+        .topbar-brand img {
+            height: 38px; width: 38px; border-radius: 8px;
+            object-fit: cover; box-shadow: 0 0 10px var(--primary-glow);
+            border: 1px solid var(--primary);
+            background: #111; 
+        }
+        .topbar-brand span { color: var(--primary); text-shadow: 0 0 15px var(--primary-glow); }
+        
+        .topbar-actions { display: flex; gap: 15px; }
+        .icon-btn {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--bg-surface); border: 1px solid var(--border-color);
+            display: flex; justify-content: center; align-items: center;
+            color: var(--primary); font-size: 1.1rem; transition: 0.2s; cursor: pointer;
+            text-decoration: none;
+        }
+        .icon-btn:active { background: var(--primary); color: #000; transform: scale(0.95); }
+
+        /* =========================================
+           HERO BANNER
+           ========================================= */
+        .banner-container { padding: 15px 20px; }
+        .main-banner {
+            background: linear-gradient(135deg, #241c00, #0a0a0c);
+            border: 1px solid rgba(255, 204, 0, 0.2);
+            border-radius: var(--radius-lg); padding: 25px 20px;
+            position: relative; overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+        }
+        .main-banner::after {
+            content: ''; position: absolute; top: -40px; right: -40px;
+            width: 140px; height: 140px; background: var(--primary);
+            filter: blur(80px); opacity: 0.4; z-index: 0;
+        }
+        .banner-content { position: relative; z-index: 1; }
+        .badge {
+            background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.3);
+            color: var(--secondary); padding: 4px 10px; border-radius: 20px;
+            font-size: 0.7rem; font-weight: 600; letter-spacing: 0.5px;
+            display: inline-block; margin-bottom: 12px; box-shadow: 0 0 10px var(--secondary-glow);
+        }
+        .banner-title {
+            font-size: 2.3rem; font-weight: 800; line-height: 1.1; margin-bottom: 8px; color: #ffffff;
+        }
+        .banner-desc { font-size: 0.85rem; color: #d1d5db; margin-bottom: 20px; max-width: 85%; }
+        
+        .btn-play {
+            background: var(--primary); color: #000; border: none;
+            padding: 12px 24px; border-radius: var(--radius-sm);
+            font-size: 0.95rem; font-weight: 700; cursor: pointer;
+            display: inline-flex; align-items: center; gap: 8px;
+            box-shadow: 0 8px 20px var(--primary-glow);
+            transition: 0.2s; text-decoration: none;
+        }
+        .btn-play:active { transform: scale(0.95); box-shadow: 0 4px 10px var(--primary-glow); }
+
+        /* =========================================
+           STATS ROW (RS)
+           ========================================= */
+        .stats-scroll {
+            display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+            padding: 5px 20px 20px 20px; scroll-behavior: smooth;
+        }
+        .stat-box {
+            flex: 0 0 130px; scroll-snap-align: start; background: var(--bg-surface);
+            border: 1px solid var(--border-color); border-radius: var(--radius-md);
+            padding: 15px; text-align: center;
+        }
+        .stat-value { font-size: 1.5rem; font-weight: 800; color: var(--text-main); font-family: 'Rajdhani', sans-serif; }
+        .stat-name { font-size: 0.7rem; color: var(--text-sec); margin-top: 4px; text-transform: uppercase; font-weight: 600;}
+
+        /* =========================================
+           APP DOWNLOAD CARD
+           ========================================= */
+        .section-wrapper { padding: 0 20px 25px 20px; }
+        .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 15px; }
+        .section-title { font-size: 1.3rem; font-weight: 700; letter-spacing: 0.5px; color: var(--primary); }
+        .section-link { font-size: 0.8rem; color: var(--secondary); font-weight: 600; }
+
+        .download-box {
+            background: var(--bg-surface); border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color); padding: 20px;
+            display: flex; flex-direction: column; gap: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .dl-header { display: flex; align-items: center; gap: 15px; }
+        .app-icon {
+            width: 70px; height: 70px; border-radius: 14px; background: transparent;
+            border: 1px solid var(--primary); display: flex; justify-content: center; align-items: center;
+            box-shadow: 0 0 15px var(--primary-glow); overflow: hidden; background: #111;
+        }
+        .app-icon img { width: 100%; height: 100%; object-fit: cover; }
+        .app-info h3 { font-size: 1.15rem; margin-bottom: 4px; color: #fff; }
+        .app-info p { font-size: 0.8rem; color: var(--text-sec); }
+        
+        .dl-meta {
+            display: flex; justify-content: space-between; background: var(--bg-main);
+            padding: 12px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.03);
+        }
+        .meta-item { text-align: center; }
+        .meta-val { font-size: 0.95rem; font-weight: 700; color: #fff; font-family: 'Rajdhani', sans-serif; }
+        .meta-lbl { font-size: 0.65rem; color: var(--text-sec); text-transform: uppercase; margin-top: 2px;}
+        
+        .btn-download {
+            background: var(--secondary); color: #000; width: 100%; padding: 14px;
+            border-radius: var(--radius-sm); font-weight: 700; font-size: 1rem; border: none; cursor: pointer;
+            display: flex; justify-content: center; align-items: center; gap: 10px;
+            transition: 0.2s; box-shadow: 0 5px 15px var(--secondary-glow);
+        }
+        .btn-download:active { transform: scale(0.98); }
+        
+        .dl-progress-bg {
+            display: none; width: 100%; height: 8px; background: var(--bg-main);
+            border-radius: 10px; overflow: hidden; margin-top: 5px; border: 1px solid var(--border-color);
+        }
+        .dl-progress-fill { width: 0%; height: 100%; background: var(--secondary); transition: width 0.2s linear; }
+
+        /* =========================================
+           FEATURES LIST
+           ========================================= */
+        .feature-list {
+            background: var(--bg-surface); border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color); overflow: hidden;
+        }
+        .feature-item {
+            display: flex; align-items: center; gap: 15px; padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .feature-item:last-child { border-bottom: none; }
+        .f-icon {
+            width: 42px; height: 42px; border-radius: 10px;
+            background: rgba(255, 204, 0, 0.1); border: 1px solid rgba(255, 204, 0, 0.2);
+            display: flex; justify-content: center; align-items: center;
+            color: var(--primary); font-size: 1.1rem;
+        }
+        .f-text { flex: 1; }
+        .f-text h4 { font-size: 0.95rem; font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 3px; color: #fff; }
+        .f-text p { font-size: 0.75rem; color: var(--text-sec); }
+        .f-arrow { color: var(--secondary); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. TOP APP BAR (WA Link Added, Bell Removed, Logo Error Fixed) -->
+    <div class="app-topbar">
+        <div class="topbar-brand">
+            <!-- Using wsrv proxy to bypass ERR_CONNECTION_RESET -->
+            <img src="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369551811-ebe98952-0265-462a-9a03-cd6d3141090f.png" alt="SS Arena Official Logo" onerror="this.src='https://via.placeholder.com/38/111/FFCC00?text=SS'">
+            SS<span>ARENA</span>
+        </div>
+        <div class="topbar-actions">
+            <!-- Official WhatsApp Channel Link -->
+            <a href="https://whatsapp.com/channel/0029VbCRDte35fLvLoCk4h27" target="_blank" class="icon-btn">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 2. MAIN APP BANNER -->
+    <div class="banner-container">
+        <div class="main-banner">
+            <div class="banner-content">
+                <div class="badge"><i class="fas fa-bolt"></i> Season 5 Live</div>
+                <h1 class="banner-title gaming-font">DOMINATE<br>THE ARENA</h1>
+                <p class="banner-desc">Join premium tournaments and win massive cash prizes daily.</p>
+                <a href="#download-section" class="btn-play">
+                    <i class="fas fa-gamepad"></i> Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. STATS ROW (RS FIX) -->
+    <div class="stats-scroll">
+        <div class="stat-box">
+            <div class="stat-value">50K+</div>
+            <div class="stat-name">Players</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value" style="color: var(--primary); text-shadow: 0 0 10px var(--primary-glow);">RS 5M+</div>
+            <div class="stat-name">Prizes Won</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value">1200+</div>
+            <div class="stat-name">Matches</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-value" style="color: var(--secondary); text-shadow: 0 0 10px var(--secondary-glow);">100%</div>
+            <div class="stat-name">Secure</div>
+        </div>
+    </div>
+
+    <!-- 4. DOWNLOAD APP CARD -->
+    <div class="section-wrapper" id="download-section">
+        <div class="section-header">
+            <h2 class="section-title gaming-font">Download App</h2>
+            <span class="section-link">v1.0.0</span>
+        </div>
+        
+        <div class="download-box">
+            <div class="dl-header">
+                <div class="app-icon">
+                    <img src="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369551811-ebe98952-0265-462a-9a03-cd6d3141090f.png" alt="SS Arena App Icon" onerror="this.src='https://via.placeholder.com/70/111/FFCC00?text=SS'">
+                </div>
+                <div class="app-info">
+                    <h3 class="gaming-font">SS ARENA OFFICIAL</h3>
+                    <p>Free Fire Esports Platform</p>
+                </div>
+            </div>
+
+            <div class="dl-meta">
+                <div class="meta-item">
+                    <div class="meta-val">4.8 <i class="fas fa-star" style="color:var(--primary); font-size:0.75rem;"></i></div>
+                    <div class="meta-lbl">Reviews</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-val">2.46MB</div>
+                    <div class="meta-lbl">Size</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-val">10+</div>
+                    <div class="meta-lbl">Rated</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-val">1k+</div>
+                    <div class="meta-lbl">Downloads</div>
+                </div>
+            </div>
+
+            <button class="btn-download" id="dl-btn">
+                <i class="fas fa-download"></i> Download APK
+            </button>
+            <div class="dl-progress-bg" id="dl-bg">
+                <div class="dl-progress-fill" id="dl-fill"></div>
+            </div>
+            <p id="dl-text" style="display:none; text-align:center; font-size:0.75rem; color:var(--text-sec); margin-top:5px; font-weight: 500;"></p>
+        </div>
+    </div>
+
+    <!-- 5. FEATURES LIST -->
+    <div class="section-wrapper">
+        <div class="section-header">
+            <h2 class="section-title gaming-font">Platform Features</h2>
+        </div>
+        
+        <div class="feature-list">
+            <div class="feature-item">
+                <div class="f-icon"><i class="fas fa-crosshairs"></i></div>
+                <div class="f-text">
+                    <h4>Auto Matchmaking</h4>
+                    <p>Get Room ID & Password instantly.</p>
+                </div>
+                <div class="f-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="feature-item">
+                <div class="f-icon"><i class="fas fa-wallet"></i></div>
+                <div class="f-text">
+                    <h4>Instant Withdrawals</h4>
+                    <p>UPI, Paytm & Bank transfer support.</p>
+                </div>
+                <div class="f-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="feature-item">
+                <div class="f-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="f-text">
+                    <h4>Anti-Hack System</h4>
+                    <p>100% fair play, strict admin monitoring.</p>
+                </div>
+                <div class="f-arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </div>
+
+<!-- END OF PART 1 -->
+    <!-- =========================================
+         PART 2 CSS (Appended)
+         ========================================= -->
+    <style>
+        /* =========================================
+           APP SCREENSHOTS (HORIZONTAL SCROLL)
+           ========================================= */
+        .screenshot-scroll {
+            display: flex; gap: 15px; overflow-x: auto; scroll-snap-type: x mandatory;
+            padding: 5px 20px 20px 20px;
+        }
+        .screenshot-card {
+            flex: 0 0 160px; scroll-snap-align: center; border-radius: var(--radius-md);
+            border: 1px solid var(--border-color); background: var(--bg-surface);
+            overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            position: relative; transition: 0.3s; cursor: pointer;
+        }
+        .screenshot-card:active { border-color: var(--secondary); box-shadow: 0 0 15px var(--secondary-glow); }
+        .screenshot-card img {
+            width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover;
+            opacity: 0.85; transition: 0.3s; pointer-events: none;
+        }
+        .screenshot-card:hover img { opacity: 1; }
+
+        /* =========================================
+           IMAGE PREVIEW MODAL (LIGHTBOX)
+           ========================================= */
+        #img-modal {
+            display: none; position: fixed; z-index: 9999;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+            justify-content: center; align-items: center;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        #img-modal.show { display: flex; opacity: 1; }
+        .modal-content {
+            max-width: 90%; max-height: 85%; border-radius: var(--radius-sm);
+            box-shadow: 0 0 25px var(--primary-glow); border: 1px solid var(--border-color);
+            transform: scale(0.8); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            object-fit: contain;
+        }
+        #img-modal.show .modal-content { transform: scale(1); }
+        .close-modal {
+            position: absolute; top: 20px; right: 25px; color: rgba(255,255,255,0.7);
+            font-size: 35px; font-weight: bold; cursor: pointer; transition: 0.2s;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8); z-index: 10000;
+        }
+        .close-modal:active { color: var(--primary); transform: scale(1.1); }
+
+        /* =========================================
+           TESTIMONIALS (APP REVIEWS)
+           ========================================= */
+        .review-scroll {
+            display: flex; gap: 15px; overflow-x: auto; scroll-snap-type: x mandatory;
+            padding: 5px 20px 20px 20px;
+        }
+        .review-card {
+            flex: 0 0 280px; scroll-snap-align: start; background: var(--bg-surface);
+            border-radius: var(--radius-lg); border: 1px solid var(--border-color);
+            padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+        .review-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .review-avatar {
+            width: 42px; height: 42px; border-radius: 50%; background: var(--primary);
+            display: flex; justify-content: center; align-items: center;
+            font-weight: 800; color: #000; font-size: 1.1rem; box-shadow: 0 0 10px var(--primary-glow);
+        }
+        .review-info h4 { font-size: 0.95rem; font-family: 'Inter', sans-serif; text-transform: none; color: #fff; }
+        .review-stars { color: var(--primary); font-size: 0.75rem; margin-top: 3px; }
+        .review-text { font-size: 0.8rem; color: var(--text-sec); line-height: 1.5; }
+
+        /* =========================================
+           FAQ ACCORDION
+           ========================================= */
+        .faq-list { display: flex; flex-direction: column; gap: 10px; }
+        .faq-item {
+            background: var(--bg-surface); border: 1px solid var(--border-color);
+            border-radius: var(--radius-md); overflow: hidden; transition: 0.3s;
+        }
+        .faq-item.active { border-color: rgba(0, 229, 255, 0.4); box-shadow: 0 0 15px rgba(0, 229, 255, 0.1); }
+        .faq-header {
+            padding: 16px 20px; display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.9rem; font-weight: 600; cursor: pointer; color: #fff;
+        }
+        .faq-header i { color: var(--secondary); transition: transform 0.3s; }
+        .faq-item.active .faq-header i { transform: rotate(180deg); color: var(--primary); }
+        .faq-body {
+            max-height: 0; overflow: hidden; transition: max-height 0.4s ease;
+            font-size: 0.8rem; color: var(--text-sec); line-height: 1.5; padding: 0 20px;
+        }
+        .faq-item.active .faq-body { padding-bottom: 16px; }
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+        .app-footer {
+            text-align: center; padding: 30px 20px 40px 20px;
+            color: var(--text-sec); font-size: 0.75rem; border-top: 1px solid var(--border-color);
+            margin-top: 10px; background: #050506;
+        }
+        .app-footer .brand {
+            font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 800; color: #fff;
+            margin-bottom: 10px; display: block;
+        }
+        .app-footer .brand span { color: var(--primary); }
+        .footer-links { display: flex; justify-content: center; gap: 15px; margin: 15px 0; }
+        .footer-links a { color: var(--secondary); text-decoration: none; font-weight: 500; }
+
+    </style>
+
+    <!-- 6. APP SCREENSHOTS SECTION (PROXY FIX APPLIED) -->
+    <div class="section-wrapper" id="screenshots-section">
+        <div class="section-header">
+            <h2 class="section-title gaming-font">Interface</h2>
+            <span class="section-link">Tap to view <i class="fas fa-search"></i></span>
+        </div>
+        <div class="screenshot-scroll">
+            <!-- Image 1 -->
+            <div class="screenshot-card" onclick="openModal('https://wsrv.nl/?url=image2url.com/r2/default/images/1772369790216-e0ef01a6-ae16-48ea-b718-ca4713254405.jpg')">
+                <img src="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369790216-e0ef01a6-ae16-48ea-b718-ca4713254405.jpg" alt="Dashboard Screenshot" onerror="this.src='https://via.placeholder.com/160x284/111/FFCC00?text=Dashboard'">
+            </div>
+            <!-- Image 2 -->
+            <div class="screenshot-card" onclick="openModal('https://wsrv.nl/?url=image2url.com/r2/default/images/1772369903634-5293f2ad-e654-453a-baea-789fa5c81912.jpg')">
+                <img src="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369903634-5293f2ad-e654-453a-baea-789fa5c81912.jpg" alt="Matches Screenshot" onerror="this.src='https://via.placeholder.com/160x284/111/FFCC00?text=Matches'">
+            </div>
+            <!-- Image 3 -->
+            <div class="screenshot-card" onclick="openModal('https://wsrv.nl/?url=image2url.com/r2/default/images/1772369937250-2ff7956c-b20d-4546-bf11-97662f45ce73.jpg')">
+                <img src="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369937250-2ff7956c-b20d-4546-bf11-97662f45ce73.jpg" alt="Wallet Screenshot" onerror="this.src='https://via.placeholder.com/160x284/111/FFCC00?text=Wallet'">
+            </div>
+            <!-- Image 4 -->
+            <div class="screenshot-card" onclick="openModal('https://wsrv.nl/?url=image2url.com/r2/default/images/1772369964892-62e1a98c-0255-4a35-b087-a93bd9fa1c02.jpg')">
+                <img src="https://wsrv.nl/?url=image2url.com/r2/default/images/1772369964892-62e1a98c-0255-4a35-b087-a93bd9fa1c02.jpg" alt="Profile Screenshot" onerror="this.src='https://via.placeholder.com/160x284/111/FFCC00?text=Profile'">
+            </div>
+        </div>
+    </div>
+
+    <!-- FULL SCREEN IMAGE PREVIEW MODAL -->
+    <div id="img-modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <!-- 7. TESTIMONIALS SECTION -->
+    <div class="section-wrapper">
+        <div class="section-header">
+            <h2 class="section-title gaming-font">Top Players</h2>
+            <span class="section-link">Reviews</span>
+        </div>
+        <div class="review-scroll">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">V</div>
+                    <div class="review-info">
+                        <h4>Viper_Gaming</h4>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+                <p class="review-text">"The withdrawal process is insanely fast. I requested my winning amount to Paytm and got it in 5 minutes. Best eSports app!"</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar" style="background: var(--secondary); color: #000; box-shadow: 0 0 10px var(--secondary-glow);">N</div>
+                    <div class="review-info">
+                        <h4>Ninja_Pro</h4>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    </div>
+                </div>
+                <p class="review-text">"No hackers, very strict admin monitoring. The Room ID update is always on time. Highly recommend to all Free Fire players."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. FAQ SECTION (RS FIX APPLIED) -->
+    <div class="section-wrapper">
+        <div class="section-header">
+            <h2 class="section-title gaming-font">Support & FAQ</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-header">How do I join a match? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-body">Download the app, create an account, add funds to your wallet, and click on 'Join' for any upcoming tournament. Room ID and Password will be provided 15 minutes before the match starts.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">What is the minimum withdrawal? <i class="fas fa-chevron-down"></i></div>
+                <!-- Changed to RS -->
+                <div class="faq-body">The minimum withdrawal amount is just RS 150. You can withdraw directly to your jazzcash or easypesa Account instantly.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">Are emulators allowed? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-body">No, emulators and PC players are strictly prohibited to maintain fair gameplay. Any player caught using an emulator or hacks will be permanently banned.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. FOOTER -->
+    <footer class="app-footer">
+        <div class="brand">SS<span>ARENA</span></div>
+        <p>The Ultimate Mobile eSports Platform</p>
+        <div class="footer-links">
+            <a href="#">Privacy</a> | 
+            <a href="#">Terms</a> | 
+            <a href="#">Contact</a>
+        </div>
+        <p>&copy; 2026 SS ARENA. All rights reserved.<br>Not affiliated with Garena Free Fire.</p>
+    </footer>
+
+    <!-- =========================================
+         BUG-FREE JAVASCRIPT LOGIC
+         ========================================= -->
+    <script>
+        // --- 1. IMAGE PREVIEW (LIGHTBOX) LOGIC ---
+        const modal = document.getElementById("img-modal");
+        const modalImg = document.getElementById("modal-img");
+
+        function openModal(imageSrc) {
+            modal.style.display = "flex";
+            // Timeout allows display:flex to apply before adding the 'show' class for smooth animation
+            setTimeout(() => {
+                modal.classList.add("show");
+                modalImg.src = imageSrc;
+            }, 10);
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            modal.classList.remove("show");
+            setTimeout(() => {
+                modal.style.display = "none";
+                modalImg.src = "";
+            }, 300); // Matches CSS transition time
+            document.body.style.overflow = "auto";
+        }
+
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) {
+                closeModal();
+            }
+        });
+
+
+        // --- DOM LOADED FUNCTIONS ---
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            // --- 2. FAQ ACCORDION LOGIC ---
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const header = item.querySelector('.faq-header');
+                header.addEventListener('click', () => {
+                    // Close others
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-body').style.maxHeight = null;
+                        }
+                    });
+                    
+                    // Toggle current
+                    item.classList.toggle('active');
+                    const body = item.querySelector('.faq-body');
+                    if (item.classList.contains('active')) {
+                        body.style.maxHeight = body.scrollHeight + "px";
+                    } else {
+                        body.style.maxHeight = null;
+                    }
+                });
+            });
+
+            // --- 3. DIRECT APK DOWNLOAD SIMULATOR ---
+            const dlBtn = document.getElementById('dl-btn');
+            const dlBg = document.getElementById('dl-bg');
+            const dlFill = document.getElementById('dl-fill');
+            const dlText = document.getElementById('dl-text');
+            let isDownloading = false;
+
+            // Target GitHub APK URL
+            const apkUrl = "https://github.com/Sameer12727/ss-arena-download/releases/download/v1.0/SS-ARENA.apk";
+
+            dlBtn.addEventListener('click', () => {
+                if (isDownloading) return; // Prevent multiple clicks
+                isDownloading = true;
+
+                // Change UI to Downloading State
+                dlBtn.style.display = 'none';
+                dlBg.style.display = 'block';
+                dlText.style.display = 'block';
+                dlText.innerText = "Connecting to server... 0%";
+                dlText.style.color = "var(--secondary)";
+                
+                let progress = 0;
+                let interval = setInterval(() => {
+                    progress += Math.floor(Math.random() * 15) + 5; // Fast simulation
+                    if (progress >= 100) {
+                        progress = 100;
+                        clearInterval(interval);
+                        
+                        dlFill.style.width = '100%';
+                        dlText.innerHTML = "<i class='fas fa-check-circle' style='color:var(--primary)'></i> Download Started!";
+                        dlText.style.color = "var(--primary)";
+                        
+                        // Trigger the ACTUAL download automatically
+                        window.location.href = apkUrl;
+                        
+                        // Reset button UI after 2 seconds
+                        setTimeout(() => {
+                            dlBg.style.display = 'none';
+                            dlText.style.display = 'none';
+                            dlBtn.style.display = 'flex';
+                            dlBtn.innerHTML = "<i class='fas fa-check'></i> Downloaded";
+                            
+                            // Change button style to indicate completion
+                            dlBtn.style.background = "var(--primary)";
+                            dlBtn.style.color = "#000";
+                            dlBtn.style.boxShadow = "0 5px 15px var(--primary-glow)";
+                            
+                            // Let the user click again if they want to re-download
+                            isDownloading = false;
+                            dlBtn.onclick = () => window.location.href = apkUrl;
+                        }, 2000);
+                    } else {
+                        dlFill.style.width = progress + '%';
+                        dlText.innerText = `Downloading SS-ARENA.apk... ${progress}%`;
+                    }
+                }, 200);
+            });
+
+        });
+    </script>
+</body>
+</html>
