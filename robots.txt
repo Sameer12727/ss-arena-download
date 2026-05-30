@@ -13,4 +13,4 @@ Disallow: /api/
 
 Crawl-delay: 1
 
-Sitemap: https://ss-arena-official.vercel.app/sitemap.xml
+Sitemap: https://ss-arena-download.vercel.app/sitemap.xml
